@@ -1,0 +1,47 @@
+{
+  "name": "n8n-nodes-halu",
+  "version": "0.1.0",
+  "description": "n8n community node for Komplex AI — a hallucination detector for LLM output.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "hallucination",
+    "hallucination-detection",
+    "llm",
+    "ai",
+    "ai-safety",
+    "rag",
+    "komplexai"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://detector.komplexai.io",
+  "author": {
+    "name": "Komplex AI",
+    "email": "support@komplexai.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komplexai/n8n-nodes-halu.git"
+  },
+  "engines": {
+    "node": ">=18.10"
+  },
+  "scripts": {
+    "build": "tsc && node copy-icons.mjs",
+    "dev": "tsc --watch"
+  },
+  "files": ["dist"],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": ["dist/credentials/HaluApi.credentials.js"],
+    "nodes": ["dist/nodes/Halu/Halu.node.js"]
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "n8n-workflow": "*",
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
