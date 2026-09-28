@@ -1,7 +1,7 @@
 # n8n-nodes-halu
 
-An [n8n](https://n8n.io) community node for [**Komplex AI**](https://detector.komplexai.io) —
-a hallucination detector for LLM output. Drop a **"Detect Hallucination"** step into any
+An [n8n](https://n8n.io) community node for [**Komplex AI**](https://detector.komplexai.io)'s
+hallucination detector for LLM output. Drop a **"Detect Hallucination"** step into any
 n8n workflow to score AI-generated text for hallucination risk.
 
 ## Install
